@@ -1,10 +1,14 @@
 # Practica_3
 
-¿Que hicimos?
-Desarrollamos un algoritmo que cifra textos usando el cifrado Vigenère, tal como se vio en clase, a su vez, también se investigó y se utilizó el método Kasiski para descifrar textos cifrados con Vigenère.
-¿Como lo hicimos?
-Nos basamos en el cifrado Cesar para crear un nuevo algoritmo capaz de cifrar texto utilizando una llave y descifrarlo utilizando la misma llave propuesta, a su vez, hicimos un algoritmo Kasiski, que es capaz de saber la longitud de la llave del cifrado Vigenère seleccionado, a base del máximo común divisor de la distancia entre el conjunto de 3 o más caracteres consecutivos repetidos del texto.
-¿Para qué lo hicimos?
-Desarrollamos estos algoritmos para entender y profundizar nuestro conocimiento sobre el criptoanálisis, entender de qué manera está evolucionando la criptografía y cómo es posible tener un acercamiento utilizando algoritmos.
+¿Qué hicimos?
 
-https://github.com/JeremyAlexis132/Practica3
+Desarrollamos un algoritmo basado en el cifrado llamado Playfair, utilizando una tabla de 5x5 para organizar todas las letras del abecedario sin contar la ñ, y haciendo que la i y la j sean el mismo carácter para cubrir y justificar las 26 letras del alfabeto.
+
+¿Cómo lo hicimos?
+
+Lo hicimos a través de un algoritmo que crea una matriz de 5x5, lee la llave introducida por el usuario y se rellenan los espacios de la matriz primero con la llave (sin repetir letras del alfabeto) y después el resto de la matriz se rellena en orden normal con las letras faltantes del alfabeto sin repetir. Posteriormente se emplean un conjunto de métodos que, a partir de las posiciones de las letras en la matriz, se van formando desplazamientos, lo que permite encriptar el mensaje, para desencriptarlo, solo hace falta aplicar las funciones a la inversa.
+
+¿Para qué lo hicimos?
+
+Hicimos este algoritmo para observar el funcionamiento de este método de encriptación, entender de qué manera funciona a nivel algoritmo, e ir conociendo nuevos métodos de cifrado que se han seguido usando a base del cifrado de Cesar.
+
